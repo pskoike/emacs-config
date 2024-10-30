@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-emacs --init-dir . "$@"
+open -na Emacs --args --init-dir . "$@"
