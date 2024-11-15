@@ -24,12 +24,11 @@ and =etc= subdirectories so that they can be included in =.gitignore=
   :ensure (:wait t))
 #+end_src
 
-** No Littering
+** Vertico
 
-Move all common files typically written to the =user-emacs-directory= to the =var=
-and =etc= subdirectories so that they can be included in =.gitignore=
-
-#+begin_src emacs-lisp
-(use-package no-littering
-  :ensure (:wait t))
+#+Begin_src emacs-lisp
+(use-package vertico
+  :ensure t
+  :init
+  (vertico-mode))
 #+end_src
